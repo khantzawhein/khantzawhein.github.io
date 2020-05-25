@@ -1,0 +1,13 @@
+
+.personal-col {
+    padding-top: 7%;
+}
+.personal-row {
+    height: 800px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+h2 {
+    font-weight: 700;
+}
