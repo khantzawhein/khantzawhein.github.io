@@ -1,0 +1,84 @@
+* {
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    font-size: 1rem;
+}
+
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar > div {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.nav-item > a {
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 0.05rem;
+}
+
+.nav-item > a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%; 
+        width: 0;
+        height: 1px; /* Height of the underline */
+        background-color: #000; /* Change this to your preferred underline color */
+        transition: width 0.3s ease; /* Transition effect for the width change */
+        transform: translateX(-50%); /* Center the pseudo-element's root */
+}
+
+/* Main */
+
+.nav-item > a:hover::before {
+    width: 90%;
+}
+
+.container {
+    padding: 5% 7%;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.social-links {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-links > a {
+    color: #000;
+}
+
+.social-links:hover {
+    background-color: #000;
+}
+
+.social-links:hover > a {
+    color: #fff;
+}
