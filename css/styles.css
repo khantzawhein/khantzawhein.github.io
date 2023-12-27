@@ -50,7 +50,7 @@ html {
 }
 
 .container {
-    padding: 5% 7%;
+    padding: 3% 7% 0;
 }
 
 .title {
@@ -59,7 +59,8 @@ html {
     text-transform: uppercase;
 }
 
-.social-links {
+.social-links > a {
+    color: #000;
     width: 35px;
     height: 35px;
     border: 1px solid rgb(0, 0, 0, 0.1); 
@@ -69,16 +70,88 @@ html {
     border-radius: 50%;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.social-links > a {
-    color: #000;
-}
-
-.social-links:hover {
+.social-links > a:hover {
     background-color: #000;
+    color: #fff;
 }
 
-.social-links:hover > a {
-    color: #fff;
+/* content */
+
+.avatar {
+    width: 60%;
+}
+
+.avatar img{
+    border-radius: 50%;
+}
+
+.description p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.biography-group {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+}
+
+.biography-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+}
+
+.biography-item > p {
+    padding: 0.6rem 0;
+    margin: 0;
+}
+
+.send-msg-btn {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0;
+    padding: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.experience-item {
+    margin: 2rem 0;
+    padding-bottom: 0.9rem;
+}
+.experience-item:not(:last-child) {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.experience-item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.organization-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.experience-position {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.description {
+    font-size: 0.9rem;
+    text-align: justify;
 }
