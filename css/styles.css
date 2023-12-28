@@ -80,17 +80,31 @@ html {
 
 /* content */
 
-.avatar {
-    width: 60%;
+
+
+.avatar img {
+    transition: all ease 1s;
+}
+@media screen and (max-width: 992px) {
+    .avatar img {
+        border-radius: 0;
+        max-width: 100%;
+        height: auto;
+    } 
 }
 
-.avatar img{
-    border-radius: 50%;
+@media screen and (min-width: 992px) {
+    .avatar {
+        width: 60%;
+    }
+    .avatar img{
+        border-radius: 50%;
+    }
 }
 
 .description p {
     font-size: 0.9rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .biography-group {
@@ -126,11 +140,21 @@ h3 {
     font-weight: bold;
 }
 
-.experience-item {
+.experience-item, .education-item {
     margin: 2rem 0;
     padding-bottom: 0.9rem;
 }
-.experience-item:not(:last-child) {
+
+.award-item{
+    margin: 1.3rem 0;
+    padding-bottom: 0.9rem;
+}
+
+.skill-item {
+    margin: 1.2rem 0;
+
+}
+.experience-item:not(:last-child), .education-item:not(:last-child), .award-item:not(:last-child) {
     border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 
@@ -140,7 +164,7 @@ h3 {
 }
 
 .organization-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -153,5 +177,65 @@ h3 {
 
 .description {
     font-size: 0.9rem;
-    text-align: justify;
+    text-align: left;
+}
+
+.duration {
+    padding: 0.15rem 0.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.award-name {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.award-name:hover {
+    text-decoration: underline;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.skill-percent {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.hobby-text {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.hobby-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin-bottom: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+.portfolio-caption {
+    font-size: 0.9rem;
+}
+
+#footer {
+    margin: 4rem 1rem 0;
+}
+
+#footer > div {
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 1rem 0 0.5rem;
+}
+
+.footer-text {
+    font-size: 0.75rem;
 }
